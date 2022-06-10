@@ -1,0 +1,8 @@
+section {
+    background-color: red;    
+}
+
+.menu ul li {
+    display: contents;
+    flex-direction: row;
+}
