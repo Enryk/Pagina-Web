@@ -1,5 +1,17 @@
-section {
+* {
+    margin: 0;
+    top: 0;
+}
+
+.menu {
+    display: flex;
     background-color: red;    
+}
+
+.menu-content {
+    position: sticky;
+    top: 10px;
+    flex-wrap: wrap;
 }
 
 .menu ul li {
