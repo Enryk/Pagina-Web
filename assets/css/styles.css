@@ -5,7 +5,7 @@
 
 .menu {
     display: flex;
-    background-color: red;    
+    background-color: #000000;    
 }
 
 .menu-content {
@@ -17,4 +17,5 @@
 .menu ul li {
     display: contents;
     flex-direction: row;
+    color: #FFFFFF;
 }
