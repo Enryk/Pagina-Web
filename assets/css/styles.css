@@ -32,11 +32,3 @@ section ul li {
     text-align: center;
     width: 100%;
 }
-
-section ul li a {
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    text-decoration: none;
-    color: #FFFFFF;
-}
