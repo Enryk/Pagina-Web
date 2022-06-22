@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     line-height: 1.5;
-    padding-top: 90px;
+    padding-top: 3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid {
     box-sizing: border-box;
-    padding: 15px;
+    padding: 20px;
 }
 
 .grid .col {
@@ -65,30 +65,40 @@ h1, h2, h3, h4, h5, h6 {
 .texto-piadas {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-}
-
-.texto-versos {
-    padding-top: 90px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    
 }
 
 #fundo-bg {
     background: #8d8a5e
 }
 
-.section {
-    min-height: 100vh;
+.section-piadas {
+    height: 85rem;
+  }
+
+.linha {
+    width: 100%;
+    height: 63.19px;
+    background: #FFFFFF;
   }
 
 @media (max-width: 768px) {
     .grid .col {
         width: 50%;
     }
+
+    .section-piadas {
+        height: 119.688rem;
+      }
+    
 }
 
 @media (max-width: 568px) {
     .grid .col {
         width: 100%;
     }
+
+    .section-piadas {
+        height: 230.938rem;
+      }
 }
