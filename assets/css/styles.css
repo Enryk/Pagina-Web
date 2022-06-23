@@ -56,6 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 }
 
+.grid .col-2 {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
 .grid .col-content {
     width: 100%;
     height: 100%;
@@ -85,20 +93,26 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     .grid .col {
         width: 50%;
+        background: #FFFFFF;
+    }
+    .grid .col-2 {
+        width: 50%;
+        background:#8d8a5e;
     }
 
-    .section-piadas {
-        height: 119.688rem;
-      }
-    
 }
 
 @media (max-width: 568px) {
     .grid .col {
         width: 100%;
     }
-
-    .section-piadas {
-        height: 230.938rem;
-      }
+    .grid .col-2 {
+        width: 100%;
+    }
+    .grid .fundo-white {
+        background:#FFFFFF;
+    }
+    .grid .fundo-beige {
+        background:#8d8a5e;
+    }
 }
