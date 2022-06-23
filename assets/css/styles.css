@@ -8,7 +8,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     line-height: 1.5;
-    padding-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,31 +22,62 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    background: #000000;
+    z-index: 1;
+    border-bottom: 0.1rem solid #000000;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color:#000000;
 }
 
 .menu ul {
-    display: flex;
     list-style: none;
+    display: flex;
 }
 
 .menu ul li a {
-    text-decoration: none;
     display: block;
-    padding: 1rem;
-    font-size: 1.3rem;
-    color: #FFFFFF;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: #000000;
     position: relative;
 }
 
-.menu ul li a:hover {
-    background: rgba(253, 253, 253, 0.637);
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: #FF0000;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+	background:#ff0;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 .grid {
     box-sizing: border-box;
-    padding: 20px;
 }
 
 .grid .col {
@@ -54,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     float: left;
     padding: 20px;
+    
 }
 
 .grid .col-2 {
@@ -82,13 +115,74 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-piadas {
     height: 85rem;
-  }
+}
 
-.linha {
-    width: 100%;
-    height: 63.19px;
-    background: #FFFFFF;
-  }
+.back-to-topo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background:#ffffff93;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#000000;
+    transform: rotate(90deg);
+    border: 0.1rem solid #FFFFFF;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .menu {
+        bottom: 0;
+    }
+
+    .menu-content {
+        height: 10vh;  
+        background: #FFFFFF;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background-color: 0.1rem solid #FFFFFF;
+        color: #000000;
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        text-align:center;
+        padding: 0.1rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+        
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+    }
+}
 
 @media (max-width: 768px) {
     .grid .col {
@@ -99,7 +193,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
         background:#8d8a5e;
     }
-
 }
 
 @media (max-width: 568px) {

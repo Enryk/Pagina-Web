@@ -9,6 +9,22 @@
     <title>Piadas Diversas</title>
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"></h1>
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="./piadas.html">Piadas</a></li>
+                        <li><a href="#">A</a></li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </aside>
+    
     <div id="Piadas" class="texto-piadas section-piadas">
         <div class="grid">
             <div class="col fundo-bg fundo-white">
@@ -429,4 +445,6 @@
             </div>
         </div>
     </div>
+
+    <a class="back-to-topo" href="#">«</a>
 </body>
