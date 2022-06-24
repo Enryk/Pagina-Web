@@ -11,7 +11,6 @@ body {
 }
 
 .fundo-img {
-    width: 100%;
     background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(20, 20, 20, 1)), url(/assets/img/fundo.jpg);
     background-position: center center;
     background-size: cover;
