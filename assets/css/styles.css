@@ -8,8 +8,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     line-height: 1.5;
+}
+
+.fundo-write {
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .img-fundo {
@@ -24,7 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
     display: flex;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -99,12 +104,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.8rem;
     color: #000000;
     position: relative;
+    text-decoration: none;
 }
 
 .menu ul li a::after {
     content: '';
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 50%;
     width: 0;
     height: 0.2rem;
@@ -239,6 +245,11 @@ h1, h2, h3, h4, h5, h6 {
     .grid .col-2 {
         width: 50%;
         background:#8d8a5e;
+    }
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
