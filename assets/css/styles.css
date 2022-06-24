@@ -10,16 +10,26 @@ body {
     line-height: 1.5;
 }
 
+.fundo-img {
+    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(20, 20, 20, 1)), url(/assets/img/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
 .fundo-write {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
-.img-fundo {
-    background: #000000;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     text-align: center;
@@ -54,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn button:before {
-    content: '';
+    content: ' ';
     border-radius: 20px;
     bottom: 0;
     left: 0;
