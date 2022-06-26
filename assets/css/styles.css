@@ -18,10 +18,10 @@ body {
     background-repeat: no-repeat;
 }
 
-.fundo-write {
+/* .fundo-write { (padding da pagina de piadas)
     padding-top: 4rem;
     padding-bottom: 4rem;
-}
+} */
 
 .home {
     display: flex;
