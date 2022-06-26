@@ -159,6 +159,14 @@ a {
   padding: 10px 20px;
   text-decoration: none;
 }
+
+.header .logo-pegadinha {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
   
 .header .menu {
   clear: both;
@@ -259,12 +267,18 @@ section {
   }
     .grid .fundo-beige {
     background:#8d8a5e;
-    }
+  }
 }
 
 @media (max-width: 198px) {
 .header .logo {
   display: none; 
+  }
+}
+
+@media (max-width: 270px) {
+  .header .logo-pegadinha {
+    display: none; 
     }
   }
 
