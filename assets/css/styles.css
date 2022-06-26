@@ -180,7 +180,6 @@ a {
   display: block;
   height: 2px;
   position: relative;
-  /* transition: background .2s ease-out; */
   width: 18px;
 }
   
@@ -262,6 +261,12 @@ section {
     background:#8d8a5e;
     }
 }
+
+@media (max-width: 198px) {
+.header .logo {
+  display: none; 
+    }
+  }
 
 @media (min-width: 768px) {
   .header li {
