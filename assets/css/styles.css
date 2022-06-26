@@ -84,9 +84,9 @@ h1 {
 .grid .col-player {
   box-sizing: border-box;
   width: 600px;
-  height: 400px;
+  height: 320px;
   float: left;
-  padding: 20px;
+  padding: 20px;;
 }
 
 .grid .col-2 {
@@ -94,7 +94,7 @@ h1 {
   width: 33.33%;
   height: 200px;
   float: left;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .grid .col-content {
