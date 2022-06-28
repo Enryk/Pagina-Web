@@ -103,6 +103,10 @@ h1 {
   overflow: auto;
 }
 
+p {
+  text-align: center;
+}
+
 .texto-piadas {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
@@ -184,7 +188,7 @@ a {
   
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   padding: 28px 20px;
   position: relative;
